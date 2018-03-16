@@ -1,0 +1,82 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.PauseIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.ResumeIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "ScoutHeadlines",
+        "samples": [
+          "headlines"
+        ],
+        "slots": []
+      },
+      {
+        "name": "ScoutMyPocketSummary",
+        "samples": [
+          "pocket"
+        ],
+        "slots": []
+      },
+      {
+        "name": "ScoutTimePeriod",
+        "samples": [
+          "{ScoutDuration}"
+        ],
+        "slots": [
+          {
+            "name": "ScoutDuration",
+            "type": "AMAZON.DURATION"
+          }
+        ]
+      },
+      {
+        "name": "ScoutTitles",
+        "samples": [
+          "titles"
+        ],
+        "slots": []
+      },
+      {
+        "name": "SearchAndPlayArticle",
+        "samples": [
+          "read me that article about {searchTerm|CatchAllSlot}",
+          "play me that article about {searchTerm|CatchAllSlot}",
+          "I want to listen to that article about {searchTerm|CatchAllSlot}",
+          "I want to hear that article about {searchTerm|CatchAllSlot}",
+          "I want to hear something about {searchTerm|CatchAllSlot}",
+          "play me an article about {searchTerm|CatchAllSlot}",
+          "that article about {searchTerm|CatchAllSlot}"
+        ],
+        "slots": [
+          {
+            "name": "searchTerm",
+            "type": "AMAZON.SearchQuery"
+          },
+          {
+            "name": "CatchAllSlot",
+            "type": "AMAZON.LITERAL"
+          }
+        ]
+      }
+    ],
+    "invocationName": "scout"
+  }
+}
