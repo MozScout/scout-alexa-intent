@@ -24,11 +24,6 @@
           "samples": []
         },
         {
-          "name": "ScoutHeadlines",
-          "slots": [],
-          "samples": ["headlines"]
-        },
-        {
           "name": "ScoutMyPocket",
           "slots": [],
           "samples": ["pocket"]
